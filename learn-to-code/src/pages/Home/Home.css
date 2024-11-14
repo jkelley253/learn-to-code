@@ -1,0 +1,47 @@
+/* learn-to-code/src/pages/Home/Home.css */
+
+/* container for the home page */
+.home-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures footer stays at the bottom */
+}
+
+/* header for the home page */
+.fade-in-header {
+    color: purple;
+    animation: fadeIn 1.5s ease-in-out forwards;
+    text-align: center;
+}
+
+/* Keyframe for animation for fading in */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transforms: translateX(-100px);
+    }
+    50% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(0); /* header centered */
+    }
+}
+
+
+.main-content {
+    flex: 1; /* Pushes the footer to the bottom */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* container for home page image */
+.centered-image {
+    display: block;
+    margin: 20px auto;
+    max-width: 80%;
+    height: auto;
+}

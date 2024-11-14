@@ -1,0 +1,12 @@
+/* learn-to-code/src/styles/global.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+h1, .fade-in-header {
+    color: purple;
+}

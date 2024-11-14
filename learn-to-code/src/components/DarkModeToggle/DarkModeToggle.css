@@ -1,0 +1,34 @@
+/* learn-to-code/src/components/DarkModeToggle/DarkModeToggle.css */
+
+/* container for the dark mode toggle */
+.dark-mode-toggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 0.5em;
+    cursor: pointer;
+}
+
+/* global dark mode styling */
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+/* global dark mode styling for links */
+body.dark-mode a {
+    color: white;
+}
+
+
+body.dark-mode .navbar, body.dark-mode .footer {
+    border-color: black;
+}  
+
+body.dark-mode .navbar {
+    border-bottom: 1px solid black; /* Sets border to black in dark mode */
+}
+
+body.dark-mode .navbar a {
+    color: white; /* Ensures text is white in dark mode */
+}
