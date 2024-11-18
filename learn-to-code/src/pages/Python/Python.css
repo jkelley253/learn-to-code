@@ -1,0 +1,40 @@
+/* learn-to-code/src/pages/Python/python.css */
+
+.python-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.fade-in-header {
+    color: purple;
+    animation: fadeInLeft 1.5s ease-in-out forwards;
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    50% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100% {
+      transform: translateX(0); /* Stays centered */
+    }
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.footer {
+    margin-top: auto;
+}

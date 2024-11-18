@@ -1,0 +1,9 @@
+
+
+installs: 
+    npx create-react-app learn-to-
+    npm install
+    npm install react-router-dom
+    npm install react-scripts --save
+    npm install @babel/plugin-proposal-private-property-in-object --save-dev
+

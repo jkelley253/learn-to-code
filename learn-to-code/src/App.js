@@ -1,18 +1,19 @@
 // learn-to-code/src/App.js
 
-// imports 
+// imports
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home/Home';
 import './styles/global.css';
 
-// App component
 function App() {
   return (
-    <div>
-      <Home />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </Router>
   );
 }
 
-// export App component
 export default App;
