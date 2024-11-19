@@ -2,9 +2,7 @@
 
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import Basics from './basics/Basics';
-import DataStructures from './datastructures/DataStructures';
-import ControlFlow from './controlflow/ControlFlow';
+import Setup from './Setup/Setup';
 import PythonNavbar from '../../components/NavbarPython/PythonNavbar';
 import DarkModeToggle from '../../components/DarkModeToggle/DarkModeToggle';
 import Footer from '../../components/Footer/Footer';
@@ -14,15 +12,13 @@ function Python() {
     return (
         <div className="python-container">
             <header className="header">
-                <PythonNavbar />
                 <h1 className="fade-in-header">Python Tutorial</h1>
                 <DarkModeToggle />
+                <PythonNavbar />
             </header>
             <main className="main-content">
                 <Routes>
-                    <Route path="basics" element={<Basics />} />
-                    <Route path="data-structures" element={<DataStructures />} />
-                    <Route path="control-flow" element={<ControlFlow />} />
+                    <Route path="setup" element={<Setup />} />
                 </Routes>
             </main>
             <Footer />

@@ -1,0 +1,41 @@
+/* src/components/TableOfContents/TableOfContents.css */
+
+.table-of-contents {
+    position: fixed;
+    top: 290px; /* Space below the header */
+    left: 0;
+    width: 250px;
+    height: calc(100vh - 70px); /* Full height minus header space */
+    overflow-y: auto; /* Allow independent scrolling */
+    padding: 15px;
+    border-right: 1px solid #ccc;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.table-of-contents h3 {
+    margin-top: 0;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.table-of-contents ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.table-of-contents li {
+    margin: 5px 0;
+}
+
+.table-of-contents li.subsection {
+    margin-left: 20px; /* Indent subsections */
+}
+
+.table-of-contents a {
+    text-decoration: none;
+    color: #333;
+}
+
+.table-of-contents a:hover {
+    text-decoration: underline;
+}

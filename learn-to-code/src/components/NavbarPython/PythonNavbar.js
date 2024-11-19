@@ -9,6 +9,7 @@ function PythonNavbar() {
         <nav className="navbar">
             <ul>
                 <li><Link to="/">Home</Link></li>
+                <li><Link to="/python/setup">Setup</Link></li>
                 <li><Link to="/python/basics">Basics</Link></li>
                 <li><Link to="/python/control-flow">Control Flow</Link></li>
                 <li><Link to="/python/data-structures">Data structures</Link></li>

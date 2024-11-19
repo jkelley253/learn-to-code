@@ -1,1 +1,33 @@
 /* learn-to-code/src/components/NavbarPython/PythonNavbar.css */
+
+/* src/components/NavbarPython/PythonNavbar.css */
+
+.python-navbar {
+    display: flex;
+    justify-content: center; /* Center align the navbar items */
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+.python-navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px; /* Add spacing between links */
+}
+
+.python-navbar li {
+    font-size: 1.2em;
+}
+
+.python-navbar a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.python-navbar a:hover {
+    color: purple;
+}  
